@@ -66,3 +66,63 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+               sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* The React root element should simply expand with content */
+#root {
+  width: 100%;
+  min-height: 100%;
+  position: relative; /* stacking context for children if needed */
+}
+
+/* ------------------------------
+   Global Background – Grid + Glow
+   (applies everywhere, including footer)
+--------------------------------*/
+body {
+  /* soft radial glows without grid lines */
+  background:
+    radial-gradient(circle 600px at 0% 200px, #d5c5ff, transparent),
+    radial-gradient(circle 600px at 100% 200px, #d5c5ff, transparent),
+    rgb(251, 231, 249); /* pink base color */
+  background-size:
+    100% 100%, /* left glow */
+    100% 100%, /* right glow */
+    auto;       /* base color */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* ------------------------------
+   Optional: Basic link & button
+--------------------------------*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

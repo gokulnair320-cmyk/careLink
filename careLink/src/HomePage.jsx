@@ -21,6 +21,7 @@ const HomePage = () => {
   // const [activeNav, setActiveNav] = useState('Home');
   // const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   // const [currentLanguage, setCurrentLanguage] = useState('English');
   // const [notifications, setNotifications] = useState(5);
 
@@ -102,6 +103,11 @@ const HomePage = () => {
   // const clearNotifications = () => {
   //   setNotifications(0);
   // };
+
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+    document.documentElement.classList.toggle('dark-theme');
+  };
 
   return (
     // <div className="container">
@@ -233,6 +239,13 @@ const HomePage = () => {
                   <button className="hero-btn hero-btn-primary">
                     <Play className="mr-2 h-5 w-5" />
                     Watch Demo
+                  </button>
+                  <button 
+                    onClick={toggleTheme}
+                    className="hero-btn hero-btn-secondary"
+                    title={isDarkTheme ? "Switch to Light Theme" : "Switch to Dark Theme"}
+                  >
+                    {isDarkTheme ? "☀️" : "🌙"} {isDarkTheme ? "Light" : "Dark"}
                   </button>
                 </div>
               </div>

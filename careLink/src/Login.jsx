@@ -70,7 +70,7 @@ function Login() {
           <div className="icon">👤</div>
           <h2>Worker Login</h2>
           <p>Access your health card using ID/DOB or QR code.</p>
-          <button onClick={() => (window.location.href = "/worker-login")}>
+          <button onClick={() => (window.location.href = "/workerLogin")}>
             Continue
           </button>
         </div>
@@ -100,46 +100,46 @@ function Login() {
 export default Login;
 
 
-const styles = {
-  container: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "100vh",
-    backgroundColor: "#f5f5f5",
-  },
-  card: {
-    backgroundColor: "white",
-    padding: "30px",
-    borderRadius: "12px",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-    width: "320px",
-  },
-  title: {
-    textAlign: "center",
-    marginBottom: "20px",
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-  },
-  input: {
-    padding: "10px",
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-  },
-  button: {
-    backgroundColor: "#2563eb",
-    color: "white",
-    padding: "10px",
-    border: "none",
-    borderRadius: "8px",
-    cursor: "pointer",
-  },
-  error: {
-    color: "red",
-    fontSize: "14px",
-    textAlign: "center",
-  },
-};
+// const styles = {
+//   container: {
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     height: "100vh",
+//     backgroundColor: "#f5f5f5",
+//   },
+//   card: {
+//     backgroundColor: "white",
+//     padding: "30px",
+//     borderRadius: "12px",
+//     boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+//     width: "320px",
+//   },
+//   title: {
+//     textAlign: "center",
+//     marginBottom: "20px",
+//   },
+//   form: {
+//     display: "flex",
+//     flexDirection: "column",
+//     gap: "10px",
+//   },
+//   input: {
+//     padding: "10px",
+//     border: "1px solid #ccc",
+//     borderRadius: "8px",
+//   },
+//   button: {
+//     backgroundColor: "#2563eb",
+//     color: "white",
+//     padding: "10px",
+//     border: "none",
+//     borderRadius: "8px",
+//     cursor: "pointer",
+//   },
+//   error: {
+//     color: "red",
+//     fontSize: "14px",
+//     textAlign: "center",
+//   },
+// };

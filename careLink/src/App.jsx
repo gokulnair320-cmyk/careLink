@@ -12,6 +12,8 @@ import Footer from "./Footer.jsx"; // ✅ import as component
 import HomePage from './homePage.jsx';
 import './Footer.css'
 import './Register.css'
+import MedicalRecord from './MedicalRecord.jsx'
+import HealthSurveillance from './HealthSurveillance.jsx'
 import WorkerLogin from './workerLogin.jsx'
 import DoctorRegister from './DoctorRegister.jsx';
 import WorkerRegister from './WorkerRegister.jsx';
@@ -28,6 +30,8 @@ function App() {
           <Route path="/healthCard" element={<h1>Welcome to card</h1>} />
           <Route path="/register" element={<Register />} />
           <Route path="/WorkerLogin" element={<WorkerLogin />} />
+            <Route path="/medical-record" element={<MedicalRecord />} />
+          <Route path="/health-surveillance" element={<HealthSurveillance />} />
           <Route path="/register/doctor" element={<DoctorRegister />} />
           <Route path="/register/worker" element={<WorkerRegister />} />
           <Route path="/login" element={<Login />} />

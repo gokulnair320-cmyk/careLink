@@ -74,20 +74,20 @@ const Navbar = () => {
               <span>{currentNav.healthCard}</span>
             </a>
 
-            <a href="#" className="nav-link">
+            <Link to="/medical-record" className="nav-link">
               <FileText className="nav-icon" />
               <span>{currentNav.medicalRecords}</span>
-            </a>
+            </Link>
 
             <a href="#" className="nav-link">
               <Users className="nav-icon" />
               <span>{currentNav.findDoctors}</span>
             </a>
 
-            <a href="#" className="nav-link">
+            <Link to="/health-surveillance" className="nav-link">
               <Shield className="nav-icon" />
               <span>{currentNav.surveillance}</span>
-            </a>
+            </Link>
           </div>
 
           {/* Right Actions */}
@@ -137,25 +137,25 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div className={`mobile-nav ${isOpen ? "visible" : "hidden"}`}>
           <div className="mobile-nav-container">
-            <a href="#" className="mobile-nav-link">
+            <Link to="/" className="mobile-nav-link">
               <span>{currentNav.home}</span>
-            </a>
-            <a href="#" className="mobile-nav-link">
+            </Link>
+            <a href="./healthCard" className="mobile-nav-link">
               <QrCode className="nav-icon" />
               <span>{currentNav.healthCard}</span>
             </a>
-            <a href="#" className="mobile-nav-link">
+            <Link to="/medical-record" className="mobile-nav-link">
               <FileText className="nav-icon" />
               <span>{currentNav.medicalRecords}</span>
-            </a>
+            </Link>
             <a href="#" className="mobile-nav-link">
               <Users className="nav-icon" />
               <span>{currentNav.findDoctors}</span>
             </a>
-            <a href="#" className="mobile-nav-link">
+            <Link to="/health-surveillance" className="mobile-nav-link">
               <Shield className="nav-icon" />
               <span>{currentNav.surveillance}</span>
-            </a>
+            </Link>
 
             {/* Mobile Language Selector */}
             <div className="mobile-lang-container">
